@@ -1,17 +1,25 @@
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
   background-image: url("../images/bg.jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  width: 100%;
 }
 
 body > div {
   max-width: 950px;
   margin: 0 auto;
   background: rgba(40, 44, 52, 0.98);
-  border-left: 10px solid #B39B53;
   border-right: 10px solid #2D4A6C;
+  border-left: 10px solid #B39B53;
 }
 
 header {
@@ -24,6 +32,7 @@ a.logo {
   width: 100%;
   text-align: center;
   opacity: 0.85;
+  transition-property: opacity;
   transition-duration: 300ms;
 }
 
@@ -37,6 +46,7 @@ a.logo .fazeclan {
   font-family: 'Audiowide', cursive;
   font-size: 7rem;
   opacity: 0;
+  transition-property: opacity;
   transition-duration: 2000ms;
 }
 
@@ -71,7 +81,7 @@ nav li a {
   padding: 10px 30px;
   font-size: 1.5rem;
   color: #ffffff;
-  text-decoration: none;
+  transition-property: color, text-shadow;
   transition-duration: 300ms;
 }
 
@@ -127,8 +137,8 @@ nav li:nth-of-type(3n) a:hover {
   bottom: 0;
   left: 0;
   padding: 20px 40px;
-  font-family: "Bowlby One SC", cursive;
   font-size: 4rem;
+  font-family: "Bowlby One SC", cursive;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -136,7 +146,8 @@ nav li:nth-of-type(3n) a:hover {
   background: url("../images/1-scooter.jpg") 50% 10%;
 }
 
-.scooter div {
+.scooter div,
+.abba div {
   background: rgba(179, 155, 83, 0.5);
 }
 
@@ -144,7 +155,8 @@ nav li:nth-of-type(3n) a:hover {
   background: url("../images/2-sash.jpg") 50% 10%;
 }
 
-.sash div {
+.sash div,
+.haddaway div {
   background: rgba(45, 74, 108, 0.5);
 }
 
@@ -152,7 +164,8 @@ nav li:nth-of-type(3n) a:hover {
   background: url("../images/3-fatboy.jpg") 50% 10%;
 }
 
-.fatboy div {
+.fatboy div, 
+.cascada div{
   background: rgba(194, 56, 54, 0.5);
 }
 
@@ -160,24 +173,12 @@ nav li:nth-of-type(3n) a:hover {
   background: url("../images/4-abba.jpg") 50% 10%;
 }
 
-.abba div {
-  background: rgba(45, 74, 108, 0.5);
-}
-
 .haddaway {
   background: url("../images/5-haddaway.jpg") 50% 10%;
 }
 
-.haddaway div {
-  background: rgba(194, 56, 54, 0.5);
-}
-
 .cascada {
   background: url("../images/6-cascada.jpg") 50% 10%;
-}
-
-.cascada div {
-  background: rgba(179, 155, 83, 0.5)
 }
 
 p {
@@ -185,16 +186,74 @@ p {
   color: #ffffff;
 }
 
+/*
+  Стили для формы
+*/
+
+form {
+  margin: 0 40px;
+}
+
+label {
+  display: block;
+  margin: 5px 0 25px;
+  font-size: 1.14rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  font-weight: normal;
+  color: #C23836;
+  background: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 3px solid #C23836;
+  border-left: 0;
+}
+
+input:focus, textarea:focus {
+  color: #B39B53;
+  background: #111317;
+  border-bottom: 3px solid #B39B53;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.42rem;
+  text-align: center;
+  color: #ffffff;
+  background: #C23836;
+  border: 0;
+  transition: 300ms;
+}
+
+button:hover {
+  background: #B39B53;
+}
+
+/*
+  Подвал сайта
+*/
+
 .wiki {
   position: relative;
   display: block;
   width: 100%;
   padding: 30px 0;
-  background: #121317;
   font-size: 2rem;
-  color: #cccccc;
   text-align: center;
-  text-decoration: none;
+  color: #cccccc;
+  background: #121317;
 }
 
 .wiki::before {
@@ -207,15 +266,11 @@ p {
   background: url("../images/Wikipedia-30.png") 30px 50% no-repeat;
 }
 
-iframe {
-  width: 100%;
-}
-
 footer {
   margin-top: 25px;
   padding: 15px;
-  background: #2D4A6C;
-  color: #ffffff;
   font-size: 1.5rem;
   text-align: center;
+  color: #ffffff;
+  background: #2D4A6C;
 }
