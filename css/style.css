@@ -1,0 +1,221 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  background-image: url("../images/bg.jpg");
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+body > div {
+  max-width: 950px;
+  margin: 0 auto;
+  background: rgba(40, 44, 52, 0.98);
+  border-left: 10px solid #B39B53;
+  border-right: 10px solid #2D4A6C;
+}
+
+header {
+  padding: 20px 0;
+}
+
+a.logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0.85;
+  transition-duration: 300ms;
+}
+
+a.logo:hover {
+  opacity: 1;
+}
+
+a.logo .fazeclan {
+  position: absolute;
+  color: #C23836;
+  font-family: 'Audiowide', cursive;
+  font-size: 7rem;
+  opacity: 0;
+  transition-duration: 2000ms;
+}
+
+a.logo:hover .fazeclan {
+  display: block;
+  opacity: 1;
+}
+
+a.logo .faze-left {
+  top: 50px;
+  left: 50px;
+}
+
+a.logo .faze-right {
+  top: 50px;
+  right: 40px;
+}
+
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition-duration: 300ms;
+}
+
+nav li:nth-of-type(3n+1).active a {
+  color: #B39B53;
+}
+
+nav li:nth-of-type(3n+2).active a {
+  color: #2D4A6C;
+}
+
+nav li:nth-of-type(3n).active a {
+  color: #C23836;
+}
+
+nav li:nth-of-type(3n+1) {
+  border-right: 1px solid #B39B53;
+}
+
+nav li:nth-of-type(3n+2) {
+  border-right: 1px solid #2D4A6C;
+}
+
+nav li:nth-of-type(3) {
+  border-right: 1px solid #C23836;
+}
+
+nav li:nth-of-type(3n+1) a:hover {
+  color: #B39B53;
+  text-shadow: 0 0 10px #B39B53;
+}
+
+nav li:nth-of-type(3n+2) a:hover {
+  color: #2D4A6C;
+  text-shadow: 0 0 10px #2D4A6C;
+}
+
+nav li:nth-of-type(3n) a:hover {
+  color: #C23836;
+  text-shadow: 0 0 10px #C23836;
+}
+
+.singer-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.singer-image div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 40px;
+  font-family: "Bowlby One SC", cursive;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.scooter {
+  background: url("../images/1-scooter.jpg") 50% 10%;
+}
+
+.scooter div {
+  background: rgba(179, 155, 83, 0.5);
+}
+
+.sash {
+  background: url("../images/2-sash.jpg") 50% 10%;
+}
+
+.sash div {
+  background: rgba(45, 74, 108, 0.5);
+}
+
+.fatboy {
+  background: url("../images/3-fatboy.jpg") 50% 10%;
+}
+
+.fatboy div {
+  background: rgba(194, 56, 54, 0.5);
+}
+
+.abba {
+  background: url("../images/4-abba.jpg") 50% 10%;
+}
+
+.abba div {
+  background: rgba(45, 74, 108, 0.5);
+}
+
+.haddaway {
+  background: url("../images/5-haddaway.jpg") 50% 10%;
+}
+
+.haddaway div {
+  background: rgba(194, 56, 54, 0.5);
+}
+
+.cascada {
+  background: url("../images/6-cascada.jpg") 50% 10%;
+}
+
+.cascada div {
+  background: rgba(179, 155, 83, 0.5)
+}
+
+p {
+  margin: 20px 40px;
+  color: #ffffff;
+}
+
+.wiki {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 30px 0;
+  background: #121317;
+  font-size: 2rem;
+  color: #cccccc;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wiki::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/Wikipedia-30.png") 30px 50% no-repeat;
+}
+
+iframe {
+  width: 100%;
+}
+
+footer {
+  margin-top: 25px;
+  padding: 15px;
+  background: #2D4A6C;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+}
